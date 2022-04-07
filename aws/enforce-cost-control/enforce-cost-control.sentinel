@@ -1,6 +1,6 @@
 
 
-# Import the run to check that the cost delta is no more than \$100. 
+# Import the run to check that the cost delta is no more than \$10. 
 # The decimal import is used for more precise calculations when working with currency numbers.
 import "tfrun"
 import "decimal"
