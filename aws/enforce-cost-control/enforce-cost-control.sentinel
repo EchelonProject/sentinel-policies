@@ -1,6 +1,6 @@
 
 
-# Import the run to check that the cost delta is no more than \$10. 
+# Import the run to check that the cost delta is no more than \$1000. 
 # The decimal import is used for more precise calculations when working with currency numbers.
 import "tfrun"
 import "decimal"
@@ -8,5 +8,5 @@ import "decimal"
 delta_monthly_cost = decimal.new(tfrun.cost_estimate.delta_monthly_cost)
 
 main = rule {
-    delta_monthly_cost.less_than(10)
+    delta_monthly_cost.less_than(1000)
 }
